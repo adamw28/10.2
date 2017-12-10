@@ -3,13 +3,44 @@
   width: 400px;
   height: 400px;
   padding: 0;
-  overflow: hidden; }
-  #carousel ul {
+  overflow: hidden;
+  position: relative;
+  color: #000; }
+  #carousel #inside {
     margin: 0;
     padding: 0;
     width: 2000px; }
-    #carousel ul li {
+    #carousel #inside li {
       list-style-type: none;
       float: left; }
+  #carousel #controls {
+    list-style-type: none;
+    height: 20px;
+    position: absolute;
+    bottom: 30px;
+    left: 29%; }
+    #carousel #controls li {
+      width: 10px;
+      height: 10px;
+      border: 1px #000 solid;
+      border-radius: 10px;
+      display: inline-block; }
+      #carousel #controls li:hover {
+        background: #000;
+        cursor: pointer; }
+    #carousel #controls .active {
+      background: #000; }
+  #carousel #left {
+    position: absolute;
+    left: 20px;
+    bottom: 50%;
+    width: 10px;
+    height: 10px; }
+  #carousel #right {
+    position: absolute;
+    right: 20px;
+    bottom: 50%;
+    width: 10px;
+    height: 10px; }
 
 /*# sourceMappingURL=style.css.map */

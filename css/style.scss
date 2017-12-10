@@ -4,13 +4,51 @@
 	height:400px;
 	padding: 0;
 	overflow:hidden;
-	ul{
+	position: relative;
+	color:#000;
+	#inside{
 		margin: 0;
 		padding: 0;
 		width:2000px;
 		li{
-		list-style-type:none;
-		float:left;
+			list-style-type:none;
+			float:left;
 		}
+	}
+	#controls{
+		list-style-type: none;
+		height:20px;
+		position: absolute;
+		bottom:30px;
+		left:29%;
+		li{
+			width:10px;
+			height:10px;
+			border:1px #000 solid;
+			border-radius: 10px;
+			display:inline-block;
+			&:hover{
+				background:#000;
+				cursor:pointer;
+			}
+		}
+		
+		.active{
+			background: #000;
+		}
+	}
+	#left{
+		position:absolute;
+		left:20px;
+		bottom:50%;
+		width:10px;
+		height:10px;
+	}
+	#right{
+		position:absolute;
+		right:20px;
+		bottom:50%;
+		width:10px;
+		height:10px;
 	}
 }
